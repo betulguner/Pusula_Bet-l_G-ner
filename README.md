@@ -1,2 +1,2 @@
-# Pusula_Bet-l_G-ner
+# Pusula_Betul_Guner
 Data Case Study
