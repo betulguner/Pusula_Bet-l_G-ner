@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # Pusula_Betul_Guner
+=======
+>>>>>>> a200d33 (EDA + preprocessing pipeline + README + plots)
 # Data Science Intern Case Study  
 **Name:** Betül Güner  
 **Email:** gunerbetul14@gmail.com  
@@ -108,4 +111,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 git clone https://github.com/username/Pusula_Betul_Guner.git
 cd dataCaseStudy
 python -m preprocessing
+<<<<<<< HEAD
 
+=======
+>>>>>>> a200d33 (EDA + preprocessing pipeline + README + plots)
