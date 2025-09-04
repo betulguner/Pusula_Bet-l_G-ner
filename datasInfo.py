@@ -47,7 +47,7 @@ if 'TedaviSuresi' in df.columns:
     print(df['TedaviSuresi'].value_counts(dropna=False).head(30))
     print("\nTedaviSuresi describe:")
     print(df['TedaviSuresi'].describe())
-    # Basit histogram (görüntülemek istersen)
+    # Basit histogram
     try:
         plt.figure(figsize=(6,3))
         df['TedaviSuresi'].dropna().astype(float).hist(bins=30)
@@ -58,17 +58,15 @@ if 'TedaviSuresi' in df.columns:
 else:
     print("\n!!! Dataset'te 'TedaviSuresi' sütunu bulunamadı. Sütun adını kontrol et. !!!")
 
-# -------------  POTANSİYEL HATA KAYNAKLARINI KONTROL ET (SENİN HATA ÇIKTI ÖRNEĞİ İÇİN) -------------
-# (Daha önce gördüğün: "Length: 367, dtype: int64" ve X_train shape: (9, 366) gibi)
+# -------------  POTANSİYEL HATA KAYNAKLARINI KONTROL ET -------------
 print("\n--- Debug checks that help find the 'small number of rows' problem ---")
-# 1) X,y ayırmadan önce şekli yazdır
+
 X = df.drop(columns=['TedaviSuresi']) if 'TedaviSuresi' in df.columns else df.copy()
 y = df['TedaviSuresi'] if 'TedaviSuresi' in df.columns else pd.Series(dtype='float')
 print("X.shape before any encoding:", X.shape)
 print("y.shape:", y.shape)
 
-# 2) Örnek: eğer encode/one-hot sonrası sütun sayısı 366 olabilir; ama satır sayısı hala ~2235 olmalı.
-#    Bu yüzden train_test_split sonrası beklenen satır sayısını kontrol et:
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 print("After sklearn train_test_split:")
 print("X_train.shape:", X_train.shape)
@@ -76,8 +74,7 @@ print("X_test.shape:", X_test.shape)
 print("y_train.shape:", y_train.shape)
 print("y_test.shape:", y_test.shape)
 
-# 3) Eğer burada X_train çok küçük görünüyorsa -> muhtemelen X veya y yanlış seçilmiş (Series vs DataFrame) veya
-#    df'den sadece çok küçük bir alt küme seçilmiş. Aşağıda index örnekleri göster:
+
 print("\nSample index values (first 20):", list(df.index[:20]))
 print("First 10 rows of df.shape and sample counts per column:")
 print(df.head(10).T)
