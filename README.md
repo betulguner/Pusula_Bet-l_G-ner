@@ -9,6 +9,7 @@ Hedef değişken: `TedaviSuresi`.
 ---
 
 ## İçerik
+- [Klasör Yapısı](#klasör-yapısı)
 - [Veri Seti Hakkında](#veri-seti-hakkında)
 - [Kolon Açıklamaları](#kolon-açıklamaları)
 - [Pipeline](#pipeline)
@@ -16,8 +17,12 @@ Hedef değişken: `TedaviSuresi`.
 - [Eksik Değer İşlemleri](#eksik-değer-işlemleri)
 - [Özellik Mühendisliği](#özellik-mühendisliği)
 - [Train-Test Split](#train-test-split)
-- [Klasör Yapısı](#klasör-yapısı)
 - [How to Run](#how-to-run)
+
+---
+
+## Klasör Yapısı
+<img width="574" height="718" alt="image" src="https://github.com/user-attachments/assets/29b73b8f-9ae5-477a-a83b-941300efb518" />
 
 ---
 
@@ -100,15 +105,13 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
+```
 
 ---
-
 ## How to Run
 ```bash
 git clone https://github.com/username/Pusula_Betul_Guner.git
 cd dataCaseStudy
 python -m preprocessing
-<<<<<<< HEAD
-
-=======
->>>>>>> a200d33 (EDA + preprocessing pipeline + README + plots)
+```
+---
