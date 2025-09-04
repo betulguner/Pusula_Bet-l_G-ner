@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c0e70d (datasInfo changes)
 # Pusula_Betul_Guner
 # Data Science Intern Case Study  
 **Name:** Betül Güner  
