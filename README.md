@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 # Pusula_Betul_Guner
-=======
->>>>>>> a200d33 (EDA + preprocessing pipeline + README + plots)
 # Data Science Intern Case Study  
 **Name:** Betül Güner  
 **Email:** gunerbetul14@gmail.com  
