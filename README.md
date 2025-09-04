@@ -9,7 +9,7 @@ Hedef değişken: `TedaviSuresi`.
 
 ---
 
-## 📌 İçerik
+## İçerik
 - [Veri Seti Hakkında](#veri-seti-hakkında)
 - [Kolon Açıklamaları](#kolon-açıklamaları)
 - [Pipeline](#pipeline)
